@@ -1,6 +1,6 @@
 # NEXUS Arena
 
-אפליקציית טורנירים מקומית, React + TypeScript + Vite. לא נוצר מאגר Git ולא בוצע חיבור ל־GitHub או פרסום.
+אפליקציית טורנירים מקומית, React + TypeScript + Vite. הקוד מנוהל במאגר GitHub, ומוכן לפרסום אוטומטי ב־GitHub Pages.
 
 ## הפעלה
 
@@ -61,3 +61,14 @@ npm run check:pwa
 ```
 
 לבדיקה ידנית: החליפו שפה ומשחק; סננו טורנירים; הירשמו ובטלו; התחילו תור; חסמו מפות לסירוגין עד לבחירה; העתיקו פרטי הדגמה; הדמו ניצחון; ממשו פרס ובדקו שהיתרה מתעדכנת. רעננו כדי לוודא שהתקדמות נשמרת. בדקו גם בתצוגת 390 פיקסלים ובאמצעות מקלדת.
+
+## GitHub Pages
+
+- Repository: https://github.com/efitach10/nexus-arena
+- App: https://efitach10.github.io/nexus-arena/
+- Settings → Pages → Source: GitHub Actions.
+- Every push to `main` triggers `.github/workflows/deploy.yml`: install, build, PWA verification, publish.
+- The workflow obtains the project base path from GitHub Pages. Local development still uses `/`.
+- To verify a project-path build locally: `PAGES_BASE_PATH=/nexus-arena npm run build && npm run check:pwa`.
+- Manifest, icons, service worker scope and offline cache use the project path. Caches are isolated from other apps on the same GitHub Pages hostname.
+- On iPhone: open the published link in Safari → Share → Add to Home Screen. On Android: browser menu → Install app.

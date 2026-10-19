@@ -12,3 +12,5 @@
 - MIDNIGHT CLASH registration applied the karma discount (300 → 270), exposed cancellation, and cancellation restored eligibility to register.
 
 Limitations: install flow was not exercised on an external phone; offline behavior was verified in a service-worker harness, not with a physical disconnected device. Authentication, matchmaking, rewards and servers are explicitly local simulations. No backend or real transactions were tested or configured.
+
+- GitHub Pages preparation: root and `/nexus-arena/` builds and PWA checks passed, including manifest URLs, scoped caches and other-project cache preservation.
