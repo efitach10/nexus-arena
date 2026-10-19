@@ -1,3 +1,35 @@
+# NEXUS Studio v2
+
+Tactical planning, drafting and VOD review for CS2, Mobile Legends and Overwatch 2. Hebrew RTL and English LTR. The original tournament arena remains accessible through the trophy icon.
+
+## Studio features
+
+- SVG board: freehand, arrows, curved rotations, players/roles, notes and eraser; drag, undo and redo.
+- Six CS2 map schematics, Land of Dawn and three Overwatch schematics. Grid, vision, danger and objective layers, plus jungle, bushes, turret ranges, high ground and sightlines where relevant.
+- Schematic smoke/flash/molotov/HE paths and impact zones. Simplified 2D smoke intersections clip sampled vision rays.
+- Execute timeline at 4x playback, timed utility and role-associated player movement. Two-finger pan/zoom and fit controls.
+- Separate local plans per game and map. PNG export at 3840x2458; 24-frame animated GIF at 800x512; JSON import/export and compressed snapshot share links. Links do not synchronize later edits.
+- Manual two-team draft, sample hero/role pools, persistent series bans, role coverage and coverage-based suggestions. Overwatch ultimate charge, Ana/Genji and Zarya/Hanzo readiness, illustrative synergy matrix.
+- Local video or YouTube embed, drawing overlay, timestamp bookmarks and notes. Local playback updates annotation timestamps. YouTube review time is manual. Disable the drawing overlay to use player controls. Local videos stay on-device and must be reselected after leaving the review screen.
+- Local rule-based tactical assistant reads the board and draft. It is not a connected LLM or live patch service.
+- Offline app shell, assets and local plans; YouTube requires internet. Voice notes are text placeholders with no microphone recording.
+
+## Training-model limitations
+
+Maps are original training schematics, not official or geometrically accurate radars. Utility is animated without collision, bounce, elevation or live telemetry. Objective windows and bush risk are illustrative. Draft pools are samples, not complete or current hero databases. Synergy and recommendations are heuristics, not verified match statistics or win probabilities. There is no automatic video/audio analysis. Real AI, verified maps and live data require licensed data sources and a backend. Shared links contain the plan and are accessible to anyone holding the link.
+
+## Verification
+
+```sh
+npm test
+npm run build
+npm run check:pwa
+```
+
+Studio code is modular under `src/studio/`. `src/Shell.tsx` connects the studio and original tournament arena. Local launch and GitHub Pages instructions follow below.
+
+---
+
 # NEXUS Arena
 
 אפליקציית טורנירים מקומית, React + TypeScript + Vite. הקוד מנוהל במאגר GitHub, ומוכן לפרסום אוטומטי ב־GitHub Pages.

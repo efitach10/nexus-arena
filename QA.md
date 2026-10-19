@@ -14,3 +14,14 @@
 Limitations: install flow was not exercised on an external phone; offline behavior was verified in a service-worker harness, not with a physical disconnected device. Authentication, matchmaking, rewards and servers are explicitly local simulations. No backend or real transactions were tested or configured.
 
 - GitHub Pages preparation: root and `/nexus-arena/` builds and PWA checks passed, including manifest URLs, scoped caches and other-project cache preservation.
+
+## Studio v2 verification
+
+- 10 unit checks: presets, invalid imports, Hebrew compressed-link round trip, per-map persistence, smoke intersections, trajectory endpoints, role score, YouTube allowlist, whole-route movement and player-route playback.
+- Browser: freehand drawn on Mirage and persisted after refresh (9 markers including a new pen stroke).
+- Browser: PNG and GIF downloads completed; binary verification confirmed 3840x2458 PNG and 800x512 GIF with 24 frames.
+- Browser: Overwatch Ana/Lucio/Genji picks updated slots, disabled duplicates and produced Ana+Genji readiness of 100% when both charges reached 100%.
+- Browser: local coach identified the incomplete selected composition.
+- Browser: VOD bookmark created at 01:30 with a coach note.
+- Browser: compressed share URL opened independently and restored Overwatch, King's Row and the plan name. Desktop and mobile layouts inspected.
+- Limits: physical phone gestures and real local video playback were not exercised. Maps and tactical calculations are expressly training schematics/heuristics.

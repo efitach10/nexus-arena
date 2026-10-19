@@ -7,4 +7,15 @@ export default defineConfig({
     ? `${process.env.PAGES_BASE_PATH.replace(/\/$/, "")}/`
     : "/",
   plugins: [react(), tailwindcss()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          motion: ["framer-motion"],
+          react: ["react", "react-dom"],
+          gif: ["gifenc"],
+        },
+      },
+    },
+  },
 });

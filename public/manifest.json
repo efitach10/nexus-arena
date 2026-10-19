@@ -1,13 +1,13 @@
 {
   "id": "./",
-  "name": "NEXUS Arena",
+  "name": "NEXUS Studio",
   "short_name": "NEXUS",
-  "description": "Competitive tournaments for CS2 and Mobile Legends",
+  "description": "Tactics, drafting, video review and tournaments for CS2, Mobile Legends and Overwatch 2",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0B0E14",
-  "theme_color": "#0B0E14",
+  "background_color": "#080A0F",
+  "theme_color": "#080A0F",
   "lang": "he",
   "dir": "rtl",
   "icons": [
